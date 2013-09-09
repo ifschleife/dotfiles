@@ -1,0 +1,11 @@
+# the if is needed so magic-space does not break the python shell
+$if Bash
+    # auto-expansion for !
+    Space: magic-space
+$endif
+#"\e[A": history-search-backward
+#"\e[B": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set bell-style none
+"\C-x\C-r": re-read-init-file
