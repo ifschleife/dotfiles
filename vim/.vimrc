@@ -26,6 +26,8 @@ au BufRead,BufNewFile *.md set filetype=markdown
 "Recognize *.qml as javascript
 au BufRead,BufNewFile *.qml set filetype=javascript
 
+"Recognize cmake files even if they have a suffix in their name
+au BufRead,BufNewFile CMakeLists*.txt set filetype=cmake
 
 "Color Schemes-----------------------------------------------------------------
 
@@ -47,8 +49,14 @@ filetype plugin indent on
 
 "Python Auto-Completion: Jedi
 let g:jedi#popup_on_dot=0
+let g:jedi#show_function_definition="0"
 
 "TagList plugin configuration
+nnoremap <silent> <F8> :TlistToggle<CR>
+" start with taglist window opened
 let Tlist_Auto_Open=1
+" even process files when taglist is hidden
+let Tlist_Process_File_Always=1
+" exit vim when only taglist is open
 let Tlist_Exit_OnlyWindow=1
 
