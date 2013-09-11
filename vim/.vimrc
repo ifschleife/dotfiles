@@ -49,12 +49,12 @@ filetype plugin indent on
 
 "Python Auto-Completion: Jedi
 let g:jedi#popup_on_dot=0
-let g:jedi#show_function_definition="0"
+let g:jedi#show_call_signatures=0
 
 "TagList plugin configuration
+" remap open/close to F8
 nnoremap <silent> <F8> :TlistToggle<CR>
-" start with taglist window opened
-let Tlist_Auto_Open=1
+let Tlist_Auto_Open=0
 " even process files when taglist is hidden
 let Tlist_Process_File_Always=1
 " exit vim when only taglist is open
