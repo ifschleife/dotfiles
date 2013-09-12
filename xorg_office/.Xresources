@@ -1,0 +1,67 @@
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt*.scrollstyle: plain
+URxvt*.scrollBar_right: true
+
+! Fonts
+URxvt*.font: xft:Monospace:Mono:pixelsize=14:antialias=true:hinting=true
+URxvt*.boldFont: xft:Monospace:Mono:bold:pixelsize=14:antialias=true:hinting=true
+
+URxvt*loginShell: false
+
+!does not seem to work
+!URxvt*.transparent: true
+!URxvt*.shading: 110
+
+! clickable links:
+URxvt.perl-ext-common:  default,matcher
+URxvt*.url-launcher:     /usr/bin/firefox
+URxvt*.matcher.button:   1
+URxvt*.colorUL: #4682B4
+
+URxvt*.cursorColor: #4682B4
+URxvt*.cursorBlink: true
+
+URxvt*.background: #000000
+URxvt*.foreground: #ffffff
+
+!black
+!URxvt*color0:    #6c6c6c
+!red
+!URxvt*color1:    #e9897c
+!green
+!URxvt*color2:    #b6e77d
+!yellow
+!URxvt*color3:    #ecebbe
+!blue
+!URxvt*color4:    #a9cdeb
+!purple
+!URxvt*color5:    #ea96eb
+!cyan
+!URxvt*color6:    #c9caec
+!white
+!URxvt*color7:    #f2f2f2
+
+!light black
+!URxvt*color8:    #747474
+!light red
+!URxvt*color9:    #f99286
+!light green
+!URxvt*color10:    #c3f786
+!light light yellow
+!URxvt*color11:    #fcfbcc
+!light blue
+!URxvt*color12:    #b6defb
+URxvt*color12:    #93b7fb
+!light purple
+!URxvt*color13:    #fba1fb
+!light cyan
+!URxvt*color14:    #d7d9fc
+!light white
+!URxvt*color15:    #e2e2e2

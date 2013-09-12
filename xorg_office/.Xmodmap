@@ -1,0 +1,34 @@
+
+
+keycode  10 = 1 exclam onesuperior exclamdown onesuperior exclamdown
+keycode  11 = 2 at twosuperior dead_doubleacute twosuperior dead_doubleacute
+keycode  12 = 3 numbersign threesuperior section threesuperior dead_macron
+keycode  13 = 4 dollar EuroSign sterling EuroSign sterling
+keycode  15 = 6 asciicircum 6 dead_circumflex notsign dead_circumflex
+
+keycode  24 = q Q aacute Aacute aacute Aacute
+keycode  25 = w W aring Aring aring Aring
+keycode  26 = e E eacute Eacute eacute Eacute
+keycode  27 = r R registered registered registered registered
+keycode  28 = t T thorn THORN thorn THORN
+keycode  29 = y Y uacute Uacute uacute Uacute
+keycode  30 = u U udiaeresis Udiaeresis udiaeresis Udiaeresis
+keycode  31 = i I iacute Iacute iacute Iacute
+keycode  32 = o O odiaeresis Odiaeresis odiaeresis Odiaeresis
+keycode  33 = p P oacute Oacute oacute Oacute
+
+
+keycode  38 = a A adiaeresis Adiaeresis adiaeresis Adiaeresis
+keycode  39 = s S ssharp section ssharp section
+
+keycode  48 = apostrophe quotedbl dead_acute dead_diaeresis dead_acute dead_diaeresis
+keycode  49 = grave asciitilde dead_grave dead_tilde dead_grave dead_tilde
+
+keycode  54 = c C copyright cent copyright cent
+
+keycode  57 = n N ntilde Ntilde ntilde Ntilde
+keycode  58 = m M mu mu mu mu
+keycode  59 = comma less ccedilla Ccedilla ccedilla Ccedilla
+
+keycode 108 = Mode_switch
+
