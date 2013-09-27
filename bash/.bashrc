@@ -31,8 +31,6 @@ export HISTIGNORE='history*'
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-[ -d $HOME/bin ] && PATH=$PATH:$HOME/bin
-
 # ssh keychain
 #eval $(keychain --eval --ignore-missing --agents ssh -Q --quiet id_ecdsa)
 
