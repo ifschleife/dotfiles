@@ -38,6 +38,9 @@ shopt -s histappend
 pkghook='/usr/share/doc/pkgfile/command-not-found.bash'
 [ -f $pkghook ] && source $pkghook
 
+# Additional bash completion scripts
+source /etc/bash_completion.d/password-store
+
 # Prompt
 #PS1='[\u@\h \W]\$ '
 PS1='\[\e[1;92m\]\u\[\e[m\]@\[\e[1;95m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
