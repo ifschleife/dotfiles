@@ -65,3 +65,5 @@ URxvt*color12:    #93b7fb
 !URxvt*color14:    #d7d9fc
 !light white
 !URxvt*color15:    #e2e2e2
+
+SshAskpass*grabKeyboard:    false
