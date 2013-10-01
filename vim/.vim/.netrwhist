@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/drahier/workspace/kofa/build/broidpkg'
-let g:netrw_dirhist_2='/home/drahier/workspace/kofa/build/broidpkg/buildroid'
-let g:netrw_dirhist_3='/home/drahier/workspace/kofa/build/foo/broid_cfg'
-let g:netrw_dirhist_4='/home/drahier/workspace/kofa/build/buildroid/pkg/ubuntu-12.04-x64'
