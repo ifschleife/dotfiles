@@ -3,7 +3,6 @@
 #
 
 # If not running interactively, don't do anything
-#[ -z "$PS1" ] && return # some from older system
 [[ $- != *i* ]] && return
 
 # disable energy star features if running locally
@@ -31,17 +30,14 @@ export HISTIGNORE='history*'
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-[ -d $HOME/bin ] && PATH=$PATH:$HOME/bin
-
-# ssh keychain
-#eval $(keychain --eval --ignore-missing --agents ssh -Q --quiet id_ecdsa)
-
 # archlinux pkgfile "command not found hook"
 pkghook='/usr/share/doc/pkgfile/command-not-found.bash'
 [ -f $pkghook ] && source $pkghook
 
+# Additional bash completion scripts
+source /etc/bash_completion.d/password-store
+
 # Prompt
-#PS1='[\u@\h \W]\$ '
 PS1='\[\e[1;92m\]\u\[\e[m\]@\[\e[1;95m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 PROMPT_COMMAND='[[ "$TERM" != "linux" ]] && echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD}\007"'
 
