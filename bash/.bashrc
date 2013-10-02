@@ -41,5 +41,4 @@ source /etc/bash_completion.d/password-store
 PS1='\[\e[1;92m\]\u\[\e[m\]@\[\e[1;95m\]\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 PROMPT_COMMAND='[[ "$TERM" != "linux" ]] && echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD}\007"'
 
-EDITOR=/usr/bin/vim
-export EDITOR
+export EDITOR=/usr/bin/vim
