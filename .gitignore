@@ -1,5 +1,6 @@
 vim/.vim/.netrwhist
 ssh/.ssh/known_hosts
 ssh/.ssh/id*
+ssh/.ssh/authorized_keys
 i3*/.i3/i3lockscreen
 i3*/.i3/py3status
