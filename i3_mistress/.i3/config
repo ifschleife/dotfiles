@@ -10,8 +10,8 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # autostarts
-exec --no-startup-id python2 /usr/bin/dropbox start
-exec --no-startup-id keepassx -min -lock
+#exec --no-startup-id python2 /usr/bin/dropbox start
+#exec --no-startup-id keepassx -min -lock
 #exec --no-startup-id xscreensaver -no-splash &
 
 set $mod Mod4
@@ -19,6 +19,7 @@ set $mod Mod4
 # control mpd
 bindsym $mod+p exec mpc toggle
 bindsym $mod+n exec mpc next
+bindsym $mod+Shift+n exec mpc prev
 bindsym $mod+m exec --no-startup-id workspace/github/dmenu-mpd/dmenu-mpd -a
 
 # change audio volume
