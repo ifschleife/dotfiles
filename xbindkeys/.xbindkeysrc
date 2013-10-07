@@ -1,3 +1,0 @@
-# Get Extra Mouse Button to work
-"xvkbd -xsendevent -text "\[XF86Back]""
-m:0x0 + b:9
