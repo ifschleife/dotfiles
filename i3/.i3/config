@@ -27,8 +27,8 @@ bindsym $mod+m exec amixer -q sset Master toggle
 bindsym $mod+minus exec amixer -q sset Master 5%-
 bindsym $mod+plus exec amixer -q sset Master 5%+
 
-# font for window titles. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# font for window titles
+font xft:Hermit Sans Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
