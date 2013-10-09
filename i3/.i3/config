@@ -28,7 +28,7 @@ bindsym $mod+minus exec amixer -q sset Master 5%-
 bindsym $mod+plus exec amixer -q sset Master 5%+
 
 # font for window titles
-font xft:Hermit Sans Mono 8
+font xft:Hermit Sans Mono 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
