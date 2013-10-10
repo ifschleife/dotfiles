@@ -135,7 +135,7 @@ assign [class="Thunderbird"] → mail
 assign [class="Pidgin" window_role="buddy_list"] → mail
 assign [class="Quodlibet"] → music
 assign [class="Smplayer"] → video
-assign [class="Last.fm"] → music
+assign [class="Lastfm-scrobbler"] → music
 assign [class="libreoffice*"] → office
 assign [class="VirtualBox"] → virt
 assign [class="spicec"] → virt
