@@ -12,20 +12,20 @@
 # autostarts
 #exec --no-startup-id python2 /usr/bin/dropbox start
 #exec --no-startup-id keepassx -min -lock
+#exec --no-startup-id i3-msg 'workspace 1:term1; exec urxvtc'
 #exec --no-startup-id xscreensaver -no-splash &
 
 set $mod Mod4
 
 # control mpd
-bindsym $mod+p exec mpc toggle
-bindsym $mod+n exec mpc next
-bindsym $mod+Shift+n exec mpc prev
-bindsym $mod+m exec --no-startup-id workspace/github/dmenu-mpd/dmenu-mpd -a
+bindsym $mod+p exec quodlibet --play-pause
+bindsym $mod+n exec quodlibet --next
+bindsym $mod+Shift+n exec quodlibet --previous
 
 # change audio volume
-#bindsym $mod+m exec amixer -D pulse -q sset Master toggle
-bindsym $mod+minus exec amixer -D pulse -q sset Master 5%-
-bindsym $mod+plus exec amixer -D pulse -q sset Master 5%+
+bindsym $mod+m exec amixer -q sset Master toggle
+bindsym $mod+minus exec amixer -q sset Master 5%-
+bindsym $mod+plus exec amixer -q sset Master 5%+
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -46,7 +46,6 @@ bindsym $mod+d exec --no-startup-id dmenu_run -f -i -p exec
 
 # lock screen
 bindsym Control+Mod1+l exec i3lock -i ~/.i3/i3lockscreen -t
-# lock screen and suspend
 bindsym Control+Shift+Mod1+l exec "i3lock -i ~/.i3/i3lockscreen -t && systemctl suspend"
 
 # change focus
@@ -106,8 +105,8 @@ set $ws2 term2
 set $ws3 www
 set $ws4 mail
 set $ws5 music
-set $ws6 video
-set $ws0 virt
+set $ws6 office
+set $ws10 virt
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -122,13 +121,13 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace $ws10
 
 # put workspaces on specific screens
-workspace "$ws1" output VGA-0
-workspace "$ws2" output DVI-0
-workspace "$ws3" output VGA-0
-workspace "$ws4" output VGA-0
-workspace "$ws5" output DVI-0
-workspace "$ws6" output DVI-0
-workspace "$ws10" output DVI-0
+workspace "$ws1" output DP-2
+workspace "$ws2" output DP-3
+workspace "$ws3" output DP-3
+workspace "$ws4" output DP-3
+workspace "$ws5" output DP-3
+workspace "$ws6" output DP-2
+workspace "$ws10" output DP-3
 
 # put applications on specific workspaces
 assign [class="Firefox"] → www
@@ -144,7 +143,7 @@ assign [class="Virt-manager"] → virt
 
 for_window [class="Pidgin" window_role="conversation"] floating enable
 for_window [class="Pidgin" window_role="buddy_list"] "layout splith;
-    resize shrink width 0 px or 33 ppt"
+    resize shrink width 0 px or 37 ppt"
 for_window [class="Last.fm"] "layout splith;
     resize shrink width 0 px or 20 ppt"
 
@@ -172,5 +171,5 @@ bindsym $mod+Shift+E exit
 bar {
     status_command py3status -c ~/.i3/i3status.conf
 
-    tray_output VGA-0
+    #tray_output VGA-0
 }
