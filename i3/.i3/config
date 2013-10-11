@@ -144,8 +144,6 @@ assign [class="Virt-manager"] → virt
 for_window [class="Pidgin" window_role="conversation"] floating enable
 for_window [class="Pidgin" window_role="buddy_list"] "layout splith;
     resize shrink width 0 px or 37 ppt"
-for_window [class="Last.fm"] "layout splith;
-    resize shrink width 0 px or 20 ppt"
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace "$ws1"
