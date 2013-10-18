@@ -1,0 +1,10 @@
+[user]
+	name = ifschleife
+	email = @EMAIL@
+[push]
+	default = simple
+[diff]
+    tool = vimdiff
+[alias]
+    st = status
+    co = checkout

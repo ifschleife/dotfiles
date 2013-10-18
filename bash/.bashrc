@@ -17,7 +17,6 @@ alias rgrep='grep -r'
 # use screen-256color for remote connections which works for all programs
 # rxvt-unicode-256color sadly does not (even with the correct terminfo).
 alias ssh='TERM=screen-256color ssh'
-alias gitst='git status'
 [ -x /usr/bin/colordiff ] && alias diff='colordiff'
 
 # improve color output of ls
