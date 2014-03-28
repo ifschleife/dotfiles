@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # autostarts
-#exec --no-startup-id python2 /usr/bin/dropbox start
+exec --no-startup-id /usr/bin/dropboxd
 #exec --no-startup-id keepassx -min -lock
 #exec --no-startup-id i3-msg 'workspace 1:term1; exec urxvtc'
 #exec --no-startup-id xscreensaver -no-splash &
